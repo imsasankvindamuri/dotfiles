@@ -1,0 +1,66 @@
+# ~/.config/helix/themes/peaceful-night.toml
+# A calming theme inspired by a starlit night sky
+
+"ui.background" = { bg = "#0f1a24" }
+"ui.text" = "#e8f4f8"
+"ui.text.focus" = "#89cdd6"
+"ui.cursor" = { fg = "#0f1a24", bg = "#89cdd6" }
+"ui.cursor.match" = { bg = "#2b5f6f" }
+"ui.selection" = { bg = "#1e3a45" }
+"ui.linenr" = "#4a6570"
+"ui.linenr.selected" = "#6eb5c0"
+"ui.statusline" = { fg = "#e8f4f8", bg = "#1a2733" }
+"ui.statusline.inactive" = { fg = "#7a8aa3", bg = "#1a2733" }
+"ui.bufferline" = { fg = "#7a8aa3", bg = "#1a2733" }
+"ui.bufferline.active" = { fg = "#89cdd6", bg = "#2b5f6f" }
+"ui.popup" = { bg = "#1a2733" }
+"ui.window" = { fg = "#2b5f6f" }
+"ui.help" = { bg = "#1a2733", fg = "#e8f4f8" }
+"ui.menu" = { bg = "#1a2733", fg = "#e8f4f8" }
+"ui.menu.selected" = { bg = "#2b5f6f" }
+
+# Calm, cool-colored diagnostics with style-based severity
+"diagnostic.hint" = { fg = "#6eb5c0", underline = { style = "curl" } }
+"diagnostic.info" = { fg = "#89cdd6", underline = { style = "curl" } }
+"diagnostic.warning" = { fg = "#4d9bb5", modifiers = ["italic"], underline = { style = "curl" } }
+"diagnostic.error" = { fg = "#3a7a8a", modifiers = ["bold"], underline = { style = "curl" } }
+
+# Syntax highlighting - cool night sky colors
+"comment" = { fg = "#5a7580", modifiers = ["italic"] }
+"constant" = "#9ba5b8"
+"constant.numeric" = "#7a8aa3"
+"constant.character.escape" = "#89cdd6"
+"string" = "#8a9aad"
+"variable" = "#d0e8f0"
+"variable.parameter" = "#b8d4dc"
+"variable.builtin" = "#4d9bb5"
+"function" = "#6eb5c0"
+"function.builtin" = "#4d9bb5"
+"function.macro" = "#89cdd6"
+"keyword" = "#3a7a8a"
+"keyword.control" = "#4d9bb5"
+"keyword.directive" = "#5a8fa0"
+"operator" = "#6eb5c0"
+"type" = "#89cdd6"
+"type.builtin" = "#6eb5c0"
+"attribute" = "#9ba5b8"
+"constructor" = "#4d9bb5"
+"namespace" = "#7a8aa3"
+"special" = "#89cdd6"
+"tag" = "#6eb5c0"
+"label" = "#9ba5b8"
+
+# Markup
+"markup.heading" = { fg = "#89cdd6", modifiers = ["bold"] }
+"markup.list" = "#6eb5c0"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.url" = { fg = "#4d9bb5", modifiers = ["underlined"] }
+"markup.link.text" = "#89cdd6"
+"markup.quote" = "#7a8aa3"
+"markup.raw" = "#9ba5b8"
+
+# Diff
+"diff.plus" = "#4d9bb5"
+"diff.delta" = "#6eb5c0"
+"diff.minus" = "#5a7580"

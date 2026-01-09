@@ -1,0 +1,58 @@
+# ~/.config/helix/languages.toml
+
+[[language]]
+name = "markdown"
+language-servers = ["marksman"]
+auto-format = false
+
+[[language]]
+name = "python"
+language-servers = ["basedpyright"]
+auto-format = true
+
+[language-server.marksman]
+command = "marksman"
+args = ["server"]
+
+[language-server.basedpyright]
+command = "basedpyright-langserver"
+args = ["--stdio"]
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
+auto-format = true
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[language-server.html-lsp]
+command = "html-language-server"
+args = ["--stdio"]
+
+[language-server.xml-lsp]
+command = "java"
+args = ["-jar", "/home/vss/lsp/org.eclipse.lemminx-uber.jar"]
+
+[[language]]
+name = "html"
+scope = "text.html.basic"
+file-types = ["html", "htm"]
+language-servers = ["html-lsp"]
+
+[[language]]
+name = "xml"
+scope = "source.xml"
+file-types = ["xml", "svg"]
+language-servers = ["xml-lsp"]

@@ -1,0 +1,42 @@
+# ~/.config/helix/config.toml
+
+theme = "starfield"
+
+[editor]
+bufferline = "multiple"
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+
+[editor.file-picker]
+hidden = false
+ignore = false
+git-ignore = false
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+# Paragraph navigation
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
+
+# Buffer management
+C-q = ":buffer-close"
+A-q = ":buffer-close!"
+tab = ":buffer-next"
+S-tab = ":buffer-previous"
+
+# Save shortcut
+C-s = ":write"
+
+[keys.select]
+# Paragraph navigation in select mode
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
